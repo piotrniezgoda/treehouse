@@ -1,0 +1,31 @@
+.services-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 87px 0 0 0;
+}
+
+.services__service {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.service__title {
+	font-size: 1.8rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: $mainBlack;
+	text-transform: uppercase;
+	margin: 39px 0 20px 0;
+}
+
+.service__subtitle {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.4rem;
+	color: $lightGrey;
+	text-align: center;
+	line-height: 2.375rem;
+}

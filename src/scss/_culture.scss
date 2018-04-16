@@ -1,0 +1,20 @@
+.culture {
+	background: $cultureBg;
+}
+
+.articles-container {
+	display: flex;
+	box-sizing: border-box;
+	padding: 87px 0 0 0;
+	justify-content: space-between;
+}
+
+.culture__box {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.section__subtitle--smallfont {
+	font-size: 1.4rem;
+}

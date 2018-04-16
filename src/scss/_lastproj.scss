@@ -1,0 +1,74 @@
+
+.lastest-projects {
+	background: url('../img/ipad.png') no-repeat;
+	background-position: 125% 100%;
+
+}
+
+.projects-container {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	
+}
+
+
+
+.lastest-projects__list {
+	margin: 26px 0 0 0;
+}
+
+.proj-ico {
+	margin: 0 17px 0 0;
+}
+
+.projects__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 7px;
+}
+
+
+.projects-title {
+	margin: 0 0 8px 0;
+}
+
+.projects-subtitle {
+	text-align: left;
+	font-size: 1.4rem;
+	font-family: 'Roboto Slab', serif;
+}
+
+.projects__subtitle--left {
+	text-align: left;
+}
+
+.projects-desc {
+	text-align: left;
+}
+
+.service__title--margin {
+	margin: 85px 0 24px 0;
+}
+
+
+.projects__details {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: $mainGreen;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 29px 0 0 0;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: url('../img/Arrow-Right.png');
+		top: 50%;
+		transform:translateY(-50%);
+		padding: 0 0 0 9px;
+	}
+}

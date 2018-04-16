@@ -1,0 +1,89 @@
+.wedo {
+	
+	
+}
+
+.wedo__boxes-container {
+	display: flex;
+	justify-content: center;
+}
+
+.wedo__left-side {
+	background: $greyBg;
+	flex: 1 1 30.71%;
+	height: 616px;
+}
+
+.wedo__right-side {
+	height: 616px;
+	flex: 1 1 69.29%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	background: url('../img/wedo-bg.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 0;
+	box-sizing: border-box;
+	padding: 0 100px 0 100px;
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.75);
+		z-index: -1;
+		left: 0;
+		top: 0;
+	}
+}
+
+.wedo__title {
+	color: #fff;
+	text-align: left;
+	line-height: 5rem;
+}
+
+.greenText {
+	color: $mainGreen;
+}
+
+.wedo__subtitle {
+	color: $headerGrey;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.4rem;
+	text-align: left;
+}
+
+.wedo__list {
+	margin-top: 14px;
+}
+
+.wedo__list-item {
+	color: $headerGrey;
+	font-size: 1.6rem;
+	font-family: 'Roboto Slab', serif;
+	margin: 10px 0;
+	background: url('../img/Checkmark-2.png') no-repeat left center;
+	padding: 10px 0px 10px 54px;
+}
+
+.wedo-btn {
+	margin: 40px 0 0 0;
+}
+
+.wedo__left-side {
+	overflow: hidden;
+	position: relative;
+}
+ 
+.wedo__gear {
+	position: absolute;
+	top: 50%;
+	right: 0; 
+	transform: translate(50%, -50%);	
+}
