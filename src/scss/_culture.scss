@@ -13,8 +13,33 @@
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	width: 33.33%;
 }
 
 .section__subtitle--smallfont {
 	font-size: 1.4rem;
+}
+
+.culture__box--lines {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: '';
+		width: 170px;
+		height: 2px;
+		background: $lightGrey;
+		top: 40px;
+    	right: -85px;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 170px;
+		height: 2px;
+		background: $lightGrey;
+		top: 40px;
+    	left: -85px;
+	}
 }

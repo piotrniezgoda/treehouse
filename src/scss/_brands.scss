@@ -1,0 +1,12 @@
+.brands {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 63px 0;
+}
+
+.brand__link {
+	margin: 0 49px;
+}
