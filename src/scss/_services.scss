@@ -11,9 +11,12 @@
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
+	padding: 10px;
 }
 
 .service__title {
+	
 	font-size: 1.8rem;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
