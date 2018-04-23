@@ -8,13 +8,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
-	<nav class="top-nav">
+	<nav id="nav" class="top-nav">
+		<button id="menuBtn" aria-label="menu" class="hamburger-btn">
+			<svg x="0px" y="0px" viewBox="0 0 53 53" style="enable-background:new 0 0 53 53;"">
+				<g>
+					<g>
+						<path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z"/>
+						<path d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z"/>
+						<path d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z"/>
+					</g>
+				</g>
+
+			</svg>
+		</button>
 		<ul class="nav__logo-list">
 			<li class="menu__item nav__logo"><a href="#" class="menu__link logo__link">
 				<svg class="logo-icon" viewBox="0 0 146.99 146.99"><defs><style>.cls-1{fill:#7cc576;}.cls-2{fill:#fff;}</style></defs><g><g><circle class="cls-1" cx="73.5" cy="73.5" r="73.5"/><path class="cls-2" d="M99.61,55c14.84,16.37,8.32,33.24,5.66,39.41C90.63,59.06,55,49.21,55,49.21s44.42,33,48.14,72c.29,3.08-7.41,4.5-7.89.82a84.23,84.23,0,0,0-5.42-20.11c-10.31.49-27.54-.57-36.32-12.12C41.88,74.4,50.87,51.47,33.07,33.23,28.91,29,79.49,32.82,99.61,55Z"/></g></g></svg>treehouse
 			</a></li>
 		</ul>
-		<ul class="nav__menu">
+		<ul id="menuList" class="nav__menu">
 			<li class="menu__item"><a href="#" class="menu__link">home</a></li>
 			<li class="menu__item"><a href="#" class="menu__link">about</a></li>
 			<li class="menu__item"><a href="#" class="menu__link">blog</a></li>
@@ -239,5 +251,7 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/script.js"></script>
 </body>
 </html>

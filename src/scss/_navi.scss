@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 	padding: 44px 16.5%;
 	z-index: 99;
+
 }
 
 .logo-icon {
@@ -39,5 +40,20 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	&--hidden {
+		height: 0px;
+		display: none;
+	}
 }
 
+.hamburger-btn {
+	width: 38px;
+	border: none;
+	background: #fff;
+	position: fixed;
+	right: 50px;
+	top: 50px;
+	display: none;
+
+}
