@@ -5,12 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TREEHOUSE - Creative Digital Solutions</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 	<nav id="nav" class="top-nav">
 		<button id="menuBtn" aria-label="menu" class="hamburger-btn">
-			<svg x="0px" y="0px" viewBox="0 0 53 53" style="enable-background:new 0 0 53 53;"">
+			<svg x="0px" y="0px" viewBox="0 0 53 53" style="enable-background:new 0 0 53 53;">
 				<g>
 					<g>
 						<path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z"/>
@@ -28,21 +28,21 @@
 		</ul>
 		<ul id="menuList" class="nav__menu">
 			<li class="menu__item"><a href="#" class="menu__link">home</a></li>
-			<li class="menu__item"><a href="#" class="menu__link">about</a></li>
+			<li class="menu__item"><a href="#onas" class="menu__link">about</a></li>
 			<li class="menu__item"><a href="#" class="menu__link">blog</a></li>
-			<li class="menu__item"><a href="#" class="menu__link">portfolio</a></li>
-			<li class="menu__item"><a href="#" class="menu__link">contact</a></li>
+			<li class="menu__item"><a href="#portfolio" class="menu__link">portfolio</a></li>
+			<li class="menu__item"><a href="#kontakt" class="menu__link">contact</a></li>
 		</ul>
 	</nav>
 
-	<header class="header">
+	<header id="start" class="header">
 		<h1 class="header__title">creative digital<span class="newLine"></span>solutions</h1>
 		<p class="header__subtitle">Proin iaculis purus consequat sem cure.</p>
 		<button class="btn--big">view portfolio</button>
 	</header>
 
 	<main class="main">
-		<section class="section--padding services">
+		<section id="onas" class="section--padding services">
 			<h2 class="section__title">professional services</h2>
 			<p class="section__subtitle">Proin iaculis purus consequat sem cure.</p>
 			
@@ -89,7 +89,7 @@
 			
 		</section>
 
-		<section class="section--padding lastest-projects">
+		<section id="portfolio" class="section--padding lastest-projects">
 			<h2 class="section__title">lastest projects</h2>
 			<p class="section__subtitle">Proin iaculis purus consequat sem cure</p>
 			<div class="projects-container">
@@ -190,7 +190,7 @@
 
 	<footer class="footer">
 		<div class="footer__sections-wrapper">
-			<section class="footer__section">
+			<section id="kontakt" class="footer__section">
 				<h4 class="footer__section-title">contact us</h4>
 				<ul class="footer__list">
 					<li class="footerlist__item adress">
@@ -221,14 +221,14 @@
 				<ul class="footer__list">
 					<li class="footerlist__item tweet">
 						<article class="footer__tweet-article">
-							<a href="#" class="footer__link"><p class="tweet">Confucius: Life is really simple, but we insist on making it complicated.</p></a>
+							<a href="#" class="footer__link"><h5 class="tweet">Confucius: Life is really simple, but we insist on making it complicated.</h5></a>
 							<a href="#" class="footer__link tweet__hash">#famousquotes</a>
 							<p class="tweet__time">8 mins ago</p>
 						</article>
 					</li>
 					<li class="footerlist__item tweet">
 						<article class="footer__tweet-article">
-							<a href="#" class="footer__link"><p class="tweet">Grab the Free Treehouse web template at FreebiesXpress!</p></a> 
+							<a href="#" class="footer__link"><h5 class="tweet">Grab the Free Treehouse web template at FreebiesXpress!</h5></a> 
 
 							<a href="#" class="footer__link tweet__hash">#freebies</a>
 							<a href="#" class="footer__link tweet__hash"> #templates</a>
@@ -251,7 +251,8 @@
 			</div>
 		</div>
 	</footer>
-
+   
+    <script src="js/scrollreveal.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

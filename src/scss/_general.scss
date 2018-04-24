@@ -16,6 +16,43 @@ $cultureBg: #f9f9f9;
 $footer-text-color: #ececec;
 
 
+
+// mixins //
+@mixin btn-focus() {
+	&:focus {
+		outline-style: dotted;
+		outline-color: #fff;
+		outline-offset: 0;
+
+	}
+}
+
+@mixin hover-underline() {
+	&::after {
+		top: 120%;
+		left: 0;
+		position: absolute;
+		width: 0%;
+		height: 2px;
+		content: '';
+		background: $mainGreen;
+		transition: 0.3s;
+	}
+
+
+	&:hover, &:focus {
+		color: $mainGreen;
+		border: none;
+		outline: none;
+		&::after {
+			width: 100%;
+			transition: 0.3s;
+		}
+
+	}
+}
+
+
 body, html {
 	font-size: 62.5%;
 
@@ -59,5 +96,16 @@ body, html {
 	background: $mainGreen;
 	border-radius: 35px;
 	border: none;
+	cursor: pointer;
+	
+
+	@include btn-focus();
+
+	&:hover {
+		background: #fff;
+		color: $mainGreen;
+		transition: 0.4s;
+	}
+
 }
 

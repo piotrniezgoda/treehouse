@@ -27,4 +27,15 @@
 	border: 3px solid #fff;
 	border-radius: 10px;
 	background: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+
+	@include btn-focus();
+
+	&:hover {
+		background: #fff;
+		color: $mainGreen;
+		transition: 0.4s;
+	}
+
 }

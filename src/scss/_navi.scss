@@ -10,7 +10,7 @@
 	box-sizing: border-box;
 	padding: 44px 16.5%;
 	z-index: 99;
-
+	box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.36);
 }
 
 .logo-icon {
@@ -28,24 +28,33 @@
 	text-decoration: none;
 	text-transform: uppercase; 
 	margin: 0 19px;
+	position: relative;
+
+	@include hover-underline();
 }
 
 .logo__link {
 	font-size: 1.8rem;
 	font-weight: 700;
 	color: $logoColor;
+
+	&:hover {
+		color: $mainGreen;
+		opacity: 0.8;
+	}
 }
 
 .nav__menu {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	
 	&--hidden {
-		height: 0px;
 		display: none;
-	}
+		height: 0px;
 }
+}
+
 
 .hamburger-btn {
 	width: 38px;

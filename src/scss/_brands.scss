@@ -9,4 +9,10 @@
 
 .brand__link {
 	margin: 0 49px;
+	transition: 0.4s;
+
+	&:hover {
+		opacity: 0.5;
+		transition: 0.4s;
+	}
 }

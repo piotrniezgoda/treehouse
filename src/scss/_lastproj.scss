@@ -64,11 +64,14 @@
 	margin: 29px 0 0 0;
 	position: relative;
 
-	&::after {
+	&::before {
 		position: absolute;
 		content: url('../img/Arrow-Right.png');
 		top: 50%;
-		transform:translateY(-50%);
+		right: 0;
+		transform:translate(100%, -50%);
 		padding: 0 0 0 9px;
 	}
+
+	@include hover-underline();
 }

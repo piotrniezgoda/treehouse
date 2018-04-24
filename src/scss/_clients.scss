@@ -65,6 +65,12 @@
 	background: $cultureBg;
 	border-radius: 50%; 
 	flex-shrink: 0;
+	transition: 0.4s;
+
+	&:hover {
+		transition: 0.4s;
+		transform: scale(1.2);
+	}
 }
 
 .client___quote {
