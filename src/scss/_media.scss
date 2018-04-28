@@ -192,6 +192,20 @@
 	}
 }
 
+@media screen and (max-width: 700px) and (orientation: landscape) {
+	.nav__logo-list {
+		margin: 0;
+	}
+
+	.hamburger-btn {
+		top: 28px;
+	}
+
+	.header {
+		margin-top: 65px;
+	}
+}
+
 @media screen and (max-width: 427px) {
 	.wedo-btn {
 		margin: 16px 0 0 0;

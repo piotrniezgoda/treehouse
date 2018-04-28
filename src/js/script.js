@@ -4,7 +4,13 @@ const menuBtn = document.querySelector('#menuBtn');
 const menu = document.querySelector('#menuList');
 const nav = document.querySelector('#nav');
 const navLinks = document.querySelectorAll('.menu__link');
+const buttons = document.querySelectorAll('button');
 let screenWidth = window.matchMedia('(max-width: 700px)');
+
+buttons.forEach(btn => btn.addEventListener('click', function() {
+	this.blur();
+}))
+
 
 let windowWidth = window.innerWidth;
 
@@ -34,9 +40,13 @@ function closeMenu() {
 
 
 // hide menu when site open on <700px window width
-if(windowWidth < 700) {
+if(windowWidth <= 700) {
+	nav.classList.add('top-nav--hidden')
     closeMenu();
+    navLinks.forEach(link => link.addEventListener('click', closeMenu));
 }
+
+
 
 // if window width is <700px then add aria-expanded false and hide menu, else if window width is >700px then remove aria-expadned and show horizontal menu 
 function hideNav(e) {

@@ -28,5 +28,8 @@
     "i": "^0.3.6",
     "npm": "^5.8.0",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-uglifyes": "^0.1.3"
   }
 }
