@@ -7,6 +7,8 @@ const navLinks = document.querySelectorAll('.menu__link');
 const buttons = document.querySelectorAll('button');
 let screenWidth = window.matchMedia('(max-width: 700px)');
 
+
+// remove focus from button after click
 buttons.forEach(btn => btn.addEventListener('click', function() {
 	this.blur();
 }))
@@ -21,11 +23,13 @@ menuBtn.addEventListener('click', toggleMenu);
 // open/hide menu after click button and change aria-expanded
 function toggleMenu() {
 	this.blur();
+	toggleAnimateButton();
 	if(menu.classList.contains('nav__menu--hidden')) {
 		openMenu();
 	} else {
 		closeMenu();
 	}
+	toggleAnimateButton();
 }
 
 function openMenu() {
@@ -35,7 +39,26 @@ function openMenu() {
 
 function closeMenu() {
     menuBtn.setAttribute('aria-expanded', 'false');
-    menu.classList.add('nav__menu--hidden') 
+    menu.classList.add('nav__menu--hidden')
+     
+}
+
+function toggleAnimateButton() {
+	const bar1 = document.querySelector('.hamburger__bar1');
+	const bar2 = document.querySelector('.hamburger__bar2');
+	const bar3 = document.querySelector('.hamburger__bar3');
+
+	if(menu.classList.contains('nav__menu--hidden')) {
+		bar1.classList.remove('hamburger__bar1--active');
+		bar2.classList.remove('hamburger__bar2--active');
+		bar3.classList.remove('hamburger__bar3--active');
+	} else {
+		bar1.classList.add('hamburger__bar1--active');
+		bar2.classList.add('hamburger__bar2--active');
+		bar3.classList.add('hamburger__bar3--active');
+	}
+
+	
 }
 
 
@@ -43,7 +66,10 @@ function closeMenu() {
 if(windowWidth <= 700) {
 	nav.classList.add('top-nav--hidden')
     closeMenu();
-    navLinks.forEach(link => link.addEventListener('click', closeMenu));
+    navLinks.forEach(link => link.addEventListener('click', function() {
+    	closeMenu();
+    	toggleAnimateButton();
+    }));
 }
 
 

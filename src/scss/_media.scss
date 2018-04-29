@@ -143,6 +143,7 @@
 		transition: 0.5s;
 		overflow: hidden;
 		opacity: 1;
+		padding-top: 25px;
 	}
 
 	.top-nav {
@@ -152,6 +153,10 @@
 		&--hidden {
 			padding: 10px 2.5%;
 		}
+	}
+
+	.header {
+		margin-top: 28px;
 	}
 
 	.menu__item {
@@ -168,12 +173,13 @@
 	}
 
 	.nav__logo-list {
-		margin: 25px 0;
+		margin: 0px 0;
 	}
 
 
 	.hamburger-btn { 
 		display: block;
+		top: 28px;
 	}
 
 	.footer__sections-wrapper {

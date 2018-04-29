@@ -66,3 +66,35 @@
 	display: none;
 
 }
+
+//hamburger animation: 
+
+.hamburger__bar1 {
+	transition: 0.3s;
+	&--active {
+		transition: 0.3s;
+		transform: rotate(45deg);
+   		transform-origin: 34%;
+   		fill: $mainGreen;
+	}
+
+}
+
+.hamburger__bar2 {
+	transition: 0.3s;
+	&--active {
+		transition: 0.3s;
+		transform: translateX(100%);
+	}
+}
+
+.hamburger__bar3 {
+	transition: 0.3s;
+
+	&--active {
+		fill: $mainGreen;
+		transition: 0.3s;
+		transform: rotate(-45deg);
+   		transform-origin: 7%;
+	}
+}
