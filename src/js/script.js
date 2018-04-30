@@ -22,24 +22,23 @@ menuBtn.addEventListener('click', toggleMenu);
 
 // open/hide menu after click button and change aria-expanded
 function toggleMenu() {
-	this.blur();
-	toggleAnimateButton();
 	if(menu.classList.contains('nav__menu--hidden')) {
 		openMenu();
 	} else {
 		closeMenu();
 	}
-	toggleAnimateButton();
 }
 
 function openMenu() {
     menuBtn.setAttribute('aria-expanded', 'true');
-    menu.classList.remove('nav__menu--hidden')
+    menu.classList.remove('nav__menu--hidden');
+    toggleAnimateButton();
 }
 
 function closeMenu() {
     menuBtn.setAttribute('aria-expanded', 'false');
-    menu.classList.add('nav__menu--hidden')
+    menu.classList.add('nav__menu--hidden');
+    toggleAnimateButton();
      
 }
 
@@ -62,14 +61,11 @@ function toggleAnimateButton() {
 }
 
 
-// hide menu when site open on <700px window width
+// hide menu when site open on <= 700px window width
 if(windowWidth <= 700) {
 	nav.classList.add('top-nav--hidden')
     closeMenu();
-    navLinks.forEach(link => link.addEventListener('click', function() {
-    	closeMenu();
-    	toggleAnimateButton();
-    }));
+    navLinks.forEach(link => link.addEventListener('click', closeMenu));
 }
 
 
@@ -96,6 +92,6 @@ function hideNav(e) {
 // SCROLL ANIMATIONS 
 
 window.sr = ScrollReveal({reset: true});
-sr.reveal('section', {duration: 1000});
-sr.reveal('aside', {duration: 1000});
-sr.reveal('.clients__quotebox', {duration: 1100});
+sr.reveal('section', {duration: 800});
+sr.reveal('aside', {duration: 800});
+sr.reveal('.clients__quotebox', {duration: 1500});
